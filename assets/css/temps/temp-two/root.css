@@ -1,0 +1,18 @@
+:root {
+  --mulishfont: "mulish";
+  --monalisafont: "monalisa";
+}
+.main-galery-item3-child2,
+.main-galery-item3-child1,
+.main-galery-item1-two,
+.main-galery-item1-child1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main-galery-item-three-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
