@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../assets/css/temps/temp-two/root.css">
     <link rel="stylesheet" href="../../assets/css/temps/temp-two/style.css">
     <link rel="stylesheet" href="../../assets/css/temps/temp-two/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>Document</title>
 </head>
 
@@ -40,7 +42,7 @@
     <main class="main-section">
         <div class="main-block-box">
             <div class="main-title">
-                <h1 class="main-title-h1">Esabella & William</h1>
+                <h2 class="main-title-h1">Esabella & William</h2>
                 <p class="main-title-suptitle">We Are Getting Married In
                 </p>
                 <p class="main-title-smalltext">12 . 12 . 2024</p>
@@ -51,7 +53,8 @@
                         <img src="./img/back-flower.png" alt="" height="700px">
                     </div>
 
-                    <div class="main-image-item2"><img src="./img/main-img.png" alt="" height="350px"></div>
+                    <div class="main-image-item2"><img src="./img/main-img.png" alt="" height="448px" width="448px">
+                    </div>
 
                 </div>
             </div>
@@ -167,12 +170,123 @@
     <!-- swiper block -->
     <div class="swiper-galery-cont">
         <div class="swiper-galery-box">
-            
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/swiper-img1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swiper-img2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swiper-img3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swiper-img4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swiper-img1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swiper-img2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swiper-img3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swiper-img4.jpg" alt=""></div>
+                    <!--  -->
+                    <!-- <div class="swiper-slide"><img src="./img/swiper-img1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swiper-img2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swiper-img3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swiper-img4.jpg" alt=""></div> -->
+                    <!--  -->
+                    <!--  -->
+
+
+                    <!--  -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+        <!-- Top Guest Box -->
+        <div class="top-guest-container">
+            <div class="top-guest-title-box">
+                <p class="guest-title-title">Top Guest</p>
+                <p class="guest-title-suptitle">Bridesmaids & Groomsman</p>
+            </div>
+            <hr class="once-hr">
+            <hr class="twice-hr">
+            <div class="top-guest-galery-box">
+                <div class="guest-galery-items">
+                    <div class="guest-galery-item-img">
+                        <img src="./img/author1.jpg" alt="">
+                    </div>
+                    <div class="guest-item-names">
+                        <p class="guest-itm-title">Jenny Wilson</p>
+                        <p class="guest-itm-suptitle">Bridemaids</p>
+                    </div>
+                </div>
+                <div class="guest-galery-items">
+                    <div class="guest-galery-item-img">
+                        <img src="./img/author2.jpg" alt="">
+                    </div>
+                    <div class="guest-item-names">
+                        <p class="guest-itm-title">Robert Fox</p>
+                        <p class="guest-itm-suptitle">Groomsman</p>
+                    </div>
+                </div>
+                <div class="guest-galery-items">
+                    <div class="guest-galery-item-img">
+                        <img src="./img/author3.jpg" alt="">
+                    </div>
+                    <div class="guest-item-names">
+                        <p class="guest-itm-title">Annette Black</p>
+                        <p class="guest-itm-suptitle">Groomsman</p>
+                    </div>
+                </div>
+                <div class="guest-galery-items">
+                    <div class="guest-galery-item-img">
+                        <img src="./img/author4.jpg" alt="">
+                    </div>
+                    <div class="guest-item-names">
+                        <p class="guest-itm-title">Jerome Bell</p>
+                        <p class="guest-itm-suptitle">Bridemaids</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-</body>
+    <div class="rsvp-form-container">
+        <div class="rsvp-backround-img">
+            <div class="form-container">
+                <form id="form" action="">
+                    <span class="form-title">Are You Attending?</span>
+                    <input class="form-inputs" type="text" placeholder="Name">
+                    <input class="form-inputs" type="email" placeholder="Email">
+                    <div class="rsvp-form-radio-box">
+                        <input type="radio" placeholder="Yes, I will be there">
+                        <label for="">Yes, I will be there</label>
+                        <input type="radio" placeholder="Sorry, I can`t come">
+                        <label for="">Sorry, I can`t come</label>
+                    </div>
+                    <select name="guestsnumber" id="guest-numbers">
+                        <option class="form-options" value="numberofguests" disabled>Number Of Guests</option>
+                        <option class="form-options" value="01">01</option>
+                        <option class="form-options" value="02">02</option>
+                        <option class="form-options" value="03">03</option>
+                        <option class="form-options" value="04">04</option>
+                        <option class="form-options" value="05">05</option>
+                    </select>
+                    <input class="form-inputs" type="text" placeholder="What will You be Attending">
+                    <select name="meal" id="mealprefer">
+                        <option class="form-options" value="meal" disabled>Meal Preference</option>
+                        <option class="form-options" value="chicken">Chicken Soup</option>
+                        <option class="form-options" value="motton">Motton Kebab</option>
+                        <option class="form-options" value="bbq">Chicken BBQ</option>
+                        <option class="form-options" value="salad">Mix Salad</option>
+                        <option class="form-options" value="beef">Beef Ribs</option>
 
+                    </select>
+                    <button class="form-submit" type="submit">RSVP</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./swiper.js"></script>
 <script src="./all.js"></script>
 
 </html>

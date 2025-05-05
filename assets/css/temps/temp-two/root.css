@@ -16,3 +16,12 @@
   flex-direction: column;
   gap: 80px;
 }
+.once-hr {
+  width: 30%;
+  height: 1px;
+}
+.twice-hr {
+  margin-top: 5px;
+  width: 20%;
+  height: 1px;
+}
