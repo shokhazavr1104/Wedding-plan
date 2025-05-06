@@ -17,10 +17,8 @@ const observer = new IntersectionObserver((entries, observer) => {
     entries.map((entry) => {
         if (entry.isIntersecting) {
             header.classList.add("scrolled")
-
         } else
             header.classList.remove("scrolled")
-
     })
 }, {
     root: null,
