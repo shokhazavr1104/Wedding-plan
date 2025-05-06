@@ -25,3 +25,10 @@
   width: 20%;
   height: 1px;
 }
+li {
+  list-style-type: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
