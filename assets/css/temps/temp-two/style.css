@@ -68,6 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation-duration: 1s;
 }
 
 .main-title-h1 {
@@ -123,6 +124,7 @@
 /* main galery */
 .main-galery-big-cont {
   padding: 50px 0;
+  /* width: 100vw; */
 }
 .main-galery-box {
   display: flex;
@@ -197,24 +199,8 @@
 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  animation: pulse 2s infinite;
 }
-@keyframes pulse {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-  }
 
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-  }
-
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-}
 .main-galery-item-two-first-wrapper {
   display: flex;
   align-items: center;
@@ -351,6 +337,7 @@ body {
   padding: 0;
 }
 .swiper-galery-cont {
+animation-duration: 1s;
 }
 .swiper {
   width: 100%;
@@ -391,10 +378,13 @@ body {
   align-items: center;
   /* justify-content: center; */
   gap: 10px;
+  animation-duration: 2s;
 }
 .top-guest-title-box {
   margin-bottom: 15px;
   text-align: center;
+  animation-duration: 1s;
+  max-width: 500px;
 }
 .guest-title-title,
 .programs-title,
@@ -414,12 +404,13 @@ body {
   color: #242424;
   font-family: var(--mulishfont);
   padding-bottom: 20px;
+  /* animation-duration: 1s; */
 }
 .guest-galery-items {
 }
 .guest-galery-item-img {
-  height: 300px;
-  width: 230px;
+  height: 440px;
+  width: 330px;
   overflow: hidden;
   transition: all 1s;
   border: 10px solid white;
@@ -441,19 +432,20 @@ body {
   text-align: center;
 }
 .guest-itm-title {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 36px;
   font-weight: 400;
   color: #242424;
   font-family: var(--monalisafont);
 }
 .guest-itm-suptitle {
-  margin-top: 5px;
-  font-size: 12px;
+  margin-top: 10px;
+  font-size: 16px;
   color: #515a44;
   font-weight: 600;
   /* font-family: var(--mulishfont); */
 }
+
 /* RSVP CONTAINER */
 .rsvp-form-container {
   /* position: relative; */
@@ -472,6 +464,7 @@ body {
   max-width: 400px;
   height: 100%;
   background-color: white;
+  animation-duration: 2s;
 }
 #form {
 }
@@ -547,6 +540,7 @@ body {
 .programs-title-box {
   text-align: center;
   padding-bottom: 10px;
+  animation-duration: 1.5s;
 }
 .programs-sup-title-box {
   margin-top: 60px;
@@ -622,6 +616,7 @@ body {
 }
 .news-title-box {
   text-align: center;
+  animation-duration: 1.5s;
 }
 
 .news-galery-box {
@@ -629,6 +624,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  animation-duration: 2s;
 }
 .news-galery-images-box {
   padding-bottom: 20px;
