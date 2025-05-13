@@ -17,7 +17,7 @@ const newsbox = document.querySelector('.news-galery-box');
 
 
 window.addEventListener('scroll', (() => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if (window.scrollY >= 1260) {
         sectionSwiper.classList.add('animate__fadeInUp');
     }
