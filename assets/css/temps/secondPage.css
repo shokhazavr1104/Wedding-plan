@@ -29,10 +29,41 @@ img {
 
 /* HEADER STYLES */
 #myHeader {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 126px;
     background-color: white;
+    z-index: 9999;
+
+
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.2s linear, opacity 0.2s linear;
 }
+
+
+#myHeader.fixed {
+
+    position: fixed;
+    inset: 0;
+    top: -100px;
+
+    background-color: white;
+    z-index: 9999;
+
+    transform: translateY(100px);
+    transition: 0.5s transform linear;
+}
+
+
+#myHeader.hidden {
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: transform 0.5s linear, opacity 0.2s linear;
+}
+
 
 .header-container {
     max-width: 1520px;
@@ -253,91 +284,160 @@ img {
     text-transform: uppercase;
 }
 
+
+
+
+
+
+
+
 /* SECOND SECTION (PLACEHOLDER) */
+
 .second-section {
     width: 100%;
     height: 100%;
+    position: relative;
+    margin-top: 250px;
 }
 
 .second-section-container {
     width: 100%;
     height: 100%;
+    background-color: white;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding: 35px 0px;
+}
+
+.second-section-block {
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #334733;
+}
+
+.sec-left-text {
+    max-width: 400px;
+    text-align: end;
+}
+
+.sec-nevesta {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.sec-left-h2 {}
+
+.sec-left-p {}
+
+
+
+
+.sec-text-block {
+    padding: 50px 0px;
+}
+
+.sec-icons {}
+
+.sec-title {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: normal;
+    color: #E8E8E8;
+}
+
+.sec-text {
+    font-size: 18px;
+    line-height: 32.4px;
+    color: #E8E8E8;
+}
+
+
+
+.sec-right-text {
+    max-width: 400px;
+}
+
+.sec-jenix {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.sec-right-h2 {}
+
+.sec-right-p {}
+
+
+.sec-para-img {
+
+    width: 600px;
+    /* height: 100%; */
+    position: absolute;
+    /* left: 50%; */
+    transform: translateX(75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 300px;
+    background-color: #E8E8E8;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.sec-para-img-inner {
+    overflow: hidden;
+    border-radius: 350px;
+}
+
+.sec-para-img-inner>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 350px;
+    -webkit-animation: kenburn 15s 2s alternate infinite;
+}
+
+/* SECOND SECTION */
+
+
+
+
+/* THIRD SECTION */
+
+.section-story {
+    margin-top: 400px;
+    padding-bottom: 200px;
+}
+
+.story-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.sec-left-container {
-    width: 100%;
-    background-color: white;
-    border: 1px solid black;
-    padding: 20px 0px;
+.story-title {
+    text-align: center;
 }
 
-.sec-left-block {
-    width: 100%;
-    height: 100%;
-    background-color: #334733;
-    text-align: end;
-}
+.story-h2 {}
 
-.sec-left-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-}
+.story-p {}
 
-.sec-left-nevesta {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
+/* THIRD SECTION */
 
-.sec-left-h2,
-.sec-left-p {
-    max-width: 300px;
-    color: white;
-}
 
-.sec-mid-container {}
 
-.sec-mid-block {}
 
-.sec-right-container {
-    width: 100%;
-    width: 100%;
-    background-color: white;
-    border: 1px solid black;
-    padding: 20px 0
-}
 
-.sec-right-block {
-    width: 100%;
-    height: 100%;
-    background-color: #334733;
-    text-align: end;
-    text-align: start;
-}
 
-.sec-right-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
-
-.sec-left-jenix {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-}
-
-/* SECOND SECTION */
 
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */
@@ -419,5 +519,20 @@ img {
     .timer-contant {
         width: 90px;
         height: 90px;
+    }
+}
+
+
+
+@keyframes kenburn {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    100% {
+
+        -webkit-transform: scale3d(1.3, 1.3, 1.3);
+        transform: scale3d(1.3, 1.3, 1.3);
     }
 }

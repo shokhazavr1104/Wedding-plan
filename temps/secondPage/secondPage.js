@@ -7,25 +7,53 @@ const callback = (event) => {
 
 
 
-const header = document.getElementById('myHeader')
+// const header = document.getElementById('myHeader')
 
 
 
-const observer = new IntersectionObserver((entries, observer) => {
-    console.log({ entries })
+// const observer = new IntersectionObserver((entries, observer) => {
+//     console.log({ entries })
 
-    entries.map((entry) => {
-        if (entry.isIntersecting) {
-            header.classList.add("scrolled")
-        } else
-            header.classList.remove("scrolled")
-    })
-}, {
-    root: null,
-    threshold: [0.9]
-});
+//     entries.map((entry) => {
+//         if (entry.isIntersecting) {
+//             header.classList.add("scrolled")
+//         } else
+//             header.classList.remove("scrolled")
+//     })
+// }, {
+//     root: null,
+//     threshold: [0.9]
+// });
 
-observer.observe(document.querySelector('.mySwiper'))
+// observer.observe(document.querySelector('.mySwiper'))
+
+const header = document.getElementById('myHeader');
+let lastScrollY = window.scrollY;
+
+function handleScroll() {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll < 200) {
+
+        header.classList.remove('fixed', 'hidden');
+    } else if (currentScroll >= 300) {
+
+        header.classList.add('fixed');
+    }
+
+    if (currentScroll > lastScrollY && currentScroll > 500) {
+
+        header.classList.remove('hidden');
+    } else if (currentScroll < lastScrollY && currentScroll > 500) {
+
+        header.classList.add('hidden');
+    }
+
+    lastScrollY = currentScroll;
+}
+
+window.addEventListener('scroll', handleScroll);
+
 
 
 // window.addEventListener('scroll', () => {
