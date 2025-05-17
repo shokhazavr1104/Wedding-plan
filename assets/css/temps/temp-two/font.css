@@ -6,3 +6,7 @@
   font-family: monalisa;
   src: url(../../../fonts/MonallesiaScript-4BgXp.ttf);
 }
+@font-face {
+  font-family: mulishblack;
+  src: url(../../../fonts/Mulish-ExtraBold.ttf);
+}
