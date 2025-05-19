@@ -15,26 +15,26 @@
 </head>
 
 <body>
-    <header id="myHeader" class="" style="max-height: 100px;">
+    <header id="myHeader">
         <div class="header-container">
             <nav class="header-block">
                 <div class="logo">
-                    <img src="../../img/header/logo.svg" alt="Site Logo">
+                    <img src="../../img/header/logo.svg" alt="Wedding Site Logo" loading="lazy">
                 </div>
-                <ul class="nav-links" role="navigation" style="list-style: none;">
-                    <li class="header-ul"><a href="/home">HOME</a></li>
-                    <li class="header-ul"><a href="/pages">PAGES</a></li>
-                    <li class="header-ul"><a href="/portfolio">PORTFOLIO</a></li>
-                    <li class="header-ul"><a href="/shop">SHOP</a></li>
-                    <li class="header-ul"><a href="/blog">BLOG</a></li>
-                    <li class="header-ul"><a href="/contact">CONTACT</a></li>
+                <ul class="nav-links" role="navigation">
+                    <li><a href="/home">HOME</a></li>
+                    <li><a href="/pages">PAGES</a></li>
+                    <li><a href="/portfolio">PORTFOLIO</a></li>
+                    <li><a href="/shop">SHOP</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
                 </ul>
                 <div class="header-icons">
-                    <button class="icon-button">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="icon-button" aria-label="Search">
+                        <img src="../../img/header/search.png" alt="Search Icon" loading="lazy">
                     </button>
-                    <button class="icon-button">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <button class="icon-button" aria-label="Cart">
+                        <img src="../../img/header/basket.png" alt="Cart Icon" loading="lazy">
                     </button>
                 </div>
             </nav>
@@ -44,7 +44,7 @@
     <div class="big-container">
         <main class="main-section">
             <div class="main-block-box">
-                <div class="main-title  animate__fadeInLeft" style="animation-duration: 2s;">
+                <div class="main-title" style="animation-duration: 2s;">
                     <h2 class="main-title-h1">Esabella & William</h2>
                     <p class="main-title-suptitle">We Are Getting Married In
                     </p>
@@ -52,11 +52,12 @@
                 </div>
                 <div class="main-block-image-section">
                     <div class="main-block-image-box">
-                        <div class="main-image-item1 animate__fadeIn" style="animation-duration: 3s;">
+                        <!-- <div class="main-image-item1">
                             <img src="./img/back-flower.png" alt="" height="700px">
-                        </div>
+                        </div> -->
 
-                        <div class="main-image-item2"><img src="./img/main-img.png" alt="" height="448px" width="448px">
+                        <div class="main-image-item2">
+                            <img src="./img/main-img.png" alt="" height="448px" width="448px">
                         </div>
 
                     </div>
@@ -89,51 +90,55 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-galery-item-two ">
-                    <div class="main-galery-two-item1">
-                        <div class="main-galery-item-two-first-wrapper">
-                            <div class="main-galery-two-itm1-first-person">
-                                <img src="./img/main-galery-woman.jpg" alt="">
+                <div class="main2">
+                    <div class="main-galery-item-two ">
+                        <div class="main-galery-two-item1">
+                            <div class="main-galery-item-two-first-wrapper">
+                                <div class="main-galery-two-itm1-first-person">
+                                    <img src="./img/main-galery-woman.jpg" alt="">
+                                </div>
+                                <div class="main-gl-item2-first-person-suptitle">
+                                    <p class="main-item2-first-parag">Esabella Bell</p>
+                                    <p class="main-item2-second-parag">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.
+                                        Soluta quasi rerum neque
+                                        voluptate similique exercitationem</p>
+                                </div>
+                                <div class="main-item2-links">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
                             </div>
-                            <div class="main-gl-item2-first-person-suptitle">
-                                <p class="main-item2-first-parag">Esabella Bell</p>
-                                <p class="main-item2-second-parag">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit.
-                                    Soluta quasi rerum neque
-                                    voluptate similique exercitationem</p>
-                            </div>
-                            <div class="main-item2-links">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
+
                         </div>
+                        <div class="main-galery-item-two-title">
+                            <div class="main-gl-item2-title-items">L</div>
+                            <div class="main-gl-item2-title-items">O</div>
+                            <div class="main-gl-item2-title-items">V</div>
+                            <div class="main-gl-item2-title-items">E</div>
+                        </div>
+                        <div class="main-galery-item-two-third-item">
 
-                    </div>
-                    <div class="main-galery-item-two-title">
-                        <div class="main-gl-item2-title-items">L</div>
-                        <div class="main-gl-item2-title-items">O</div>
-                        <div class="main-gl-item2-title-items">V</div>
-                        <div class="main-gl-item2-title-items">E</div>
-                    </div>
-                    <div class="main-galery-item-two-third-item">
+                            <div class="main-galery-item-two-third-wrapper">
+                                <div class="main-galery-two-itm1-third-person">
+                                    <img src="./img/main-galery-man.jpg" alt="">
+                                </div>
 
-                        <div class="main-galery-item-two-third-wrapper">
-                            <div class="main-galery-two-itm1-third-person">
-                                <img src="./img/main-galery-man.jpg" alt="">
-                            </div>
-
-                            <div class="main-gl-item2-first-person-suptitle">
-                                <p class="main-item2-first-parag">William Max</p>
-                                <p class="main-item2-second-parag">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit.
-                                    Soluta quasi rerum neque
-                                    voluptate similique exercitationem</p>
-                            </div>
-                            <div class="main-item2-links">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <div class="main-gl-item2-first-person-suptitle">
+                                    <p class="main-item2-first-parag">William Max</p>
+                                    <p class="main-item2-second-parag">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.
+                                        Soluta quasi rerum neque
+                                        voluptate similique exercitationem</p>
+                                </div>
+                                <div class="main-item2-links">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
