@@ -151,6 +151,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 220px;
+    margin-top: 120px;
 }
 
 .timer_box {
@@ -166,6 +167,16 @@
 
     img {
         position: absolute;
+    }
+
+    .timer_box_img1 {
+        bottom: 0px;
+        left: -30px;
+    }
+
+    .timer_box_img2{
+        top: -30px;
+        left: -70px;
     }
 
     div {
