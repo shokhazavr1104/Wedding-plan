@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 * {
     margin: 0;
@@ -7,8 +7,19 @@
     box-sizing: border-box;
 }
 
+:root {
+    --mulish-font: "Mulish", sans-serif;
+    --great-vibes-font: "Great Vibes", cursive;
+    --grey-color: #707070;
+}
+
+.container {
+    max-width: 2056px;
+    margin: 0 auto;
+}
+
 .mainpage {
-    font-family: "Mulish", sans-serif;
+    font-family: var(--mulish-font);
     background-color: #EBF0F8;
     display: flex;
     align-items: center;
@@ -146,6 +157,9 @@
     }
 }
 
+
+/* TIMER CONTAINER */
+
 .timer_container {
     display: flex;
     align-items: center;
@@ -157,7 +171,7 @@
 .timer_box {
     position: relative;
     background-color: #C7D9F8;
-    color: #707070;
+    color: var(--grey-color);
     width: 230px;
     height: 280px;
     border: none;
@@ -174,7 +188,7 @@
         left: -30px;
     }
 
-    .timer_box_img2{
+    .timer_box_img2 {
         top: -30px;
         left: -70px;
     }
@@ -185,7 +199,7 @@
         width: 100%;
         height: 100%;
         text-align: center;
-        font-family: "Grandstander", cursive;
+        font-family: var(--great-vibes-font);
 
         h1 {
             font-size: 60px;
@@ -199,4 +213,35 @@
             font-weight: 100;
         }
     }
+}
+
+/* LOVE STORY CONTAINER */
+
+.love_story {
+    margin-top: 120px;
+}
+
+.story_title_container {
+    text-align: center;
+
+    .story_title {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .fst-t {
+        font-family: var(--great-vibes-font);
+        font-weight: 200;
+        color: var(--grey-color);
+    }
+
+    .sec-t {
+        font-family: var(--mulish-font);
+        font-weight: 400;
+    }
+}
+
+.story_container {
+    display: flex;
+    flex-direction: row;
 }
