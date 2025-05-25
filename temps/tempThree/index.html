@@ -208,38 +208,78 @@
 
             <div class="sweet_memories_container">
                 <div class="sweet_memories_box">
-                    <div>
+                    <div class="sweet_memories_img_wrapper">
                         <img src="../../img/tempThree/19.jpg" alt="">
+                        <div class="sweet_memories_overlay">
+                            <span>+</span>
+                        </div>
                     </div>
                 </div>
                 <div class="sweet_memories_box center-top">
-                    <div>
+                    <div class="sweet_memories_img_wrapper">
                         <img src="../../img/tempThree/20.jpg" alt="">
+                        <div class="sweet_memories_overlay">
+                            <span>+</span>
+                        </div>
                     </div>
                 </div>
                 <div class="sweet_memories_box">
-                    <div>
+                    <div class="sweet_memories_img_wrapper">
                         <img src="../../img/tempThree/21.jpg" alt="">
+                        <div class="sweet_memories_overlay">
+                            <span>+</span>
+                        </div>
                     </div>
                 </div>
                 <div class="sweet_memories_box">
-                    <div>
+                    <div class="sweet_memories_img_wrapper">
                         <img src="../../img/tempThree/22.jpg" alt="">
+                        <div class="sweet_memories_overlay">
+                            <span>+</span>
+                        </div>
                     </div>
                 </div>
                 <div class="sweet_memories_box center-bottom">
-                    <div>
+                    <div class="sweet_memories_img_wrapper">
                         <img src="../../img/tempThree/23.jpg" alt="">
+                        <div class="sweet_memories_overlay">
+                            <span>+</span>
+                        </div>
                     </div>
                 </div>
                 <div class="sweet_memories_box">
-                    <div>
+                    <div class="sweet_memories_img_wrapper">
                         <img src="../../img/tempThree/24.jpg" alt="">
+                        <div class="sweet_memories_overlay">
+                            <span>+</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <script>
+        document.querySelectorAll('.sweet_memories_overlay').forEach(overlay => {
+            overlay.addEventListener('click', function (e) {
+                e.stopPropagation();
+                const img = this.parentElement.querySelector('img');
+                if (!img) return;
+                // Create modal
+                let modal = document.createElement('div');
+                modal.className = 'sweet-memories-modal';
+
+                let modalImg = document.createElement('img');
+                modalImg.src = img.src;
+                modal.appendChild(modalImg);
+
+                modal.addEventListener('click', function () {
+                    document.body.removeChild(modal);
+                });
+
+                document.body.appendChild(modal);
+            });
+        });
+    </script>
 </body>
 
 </html>
