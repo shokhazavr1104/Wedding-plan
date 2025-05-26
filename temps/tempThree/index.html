@@ -264,28 +264,37 @@
             </div>
 
             <div class="form">
-                <div>
+                <div class="form_box">
                     <h1>Are You Attending?</h1>
                     <form action="">
-                        <div>
+                        <div class="form_field">
                             <input type="text" placeholder="Name">
                         </div>
-                        <div>
-                            <input type="text" placeholder="Phone">
+                        <div class="form_field">
+                            <input type="text" placeholder="Email">
                         </div>
-                        <div>
-                            <input type="radio" value="Yes, I will be there">
-                            <input type="radio" value="Sorry, I can't come">
+                        <div class="form_radio_group">
+                            <label class="radio_option">
+                                <input type="radio" name="attendance" value="yes">
+                                <span>Yes, I will be there</span>
+                            </label>
+                            <label class="radio_option">
+                                <input type="radio" name="attendance" value="no">
+                                <span>Sorry, I can't come</span>
+                            </label>
                         </div>
-                        <div>
+                        <div class="form_field">
+                            <input type="number" placeholder="Number Of Guests">
+                        </div>
+                        <div class="form_field">
                             <input type="text" placeholder="What Will You Be Attending">
                         </div>
-                        <div>
-                            <select name="meal" id="">
-                                <option value="def">Meal Preferences</option>
-                                <option value="def">Plov</option>
-                                <option value="def">BBQ</option>
-                                <option value="def">Chicken</option>
+                        <div class="form_select">
+                            <select name="meal">
+                                <option value="">Meal Preferences</option>
+                                <option value="plov">Plov</option>
+                                <option value="bbq">BBQ</option>
+                                <option value="chicken">Chicken</option>
                             </select>
                         </div>
                         <button type="submit">RSVP</button>
