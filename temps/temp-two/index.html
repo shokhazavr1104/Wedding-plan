@@ -4,44 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../../assets/css/temps/temp-two/root.css">
     <link rel="stylesheet" href="../../assets/css/temps/temp-two/responsive.css">
     <link rel="stylesheet" href="../../assets/css/temps/temp-two/style.css">
     <link rel="stylesheet" href="../../assets/css/temps/temp-two/font.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>Document</title>
 </head>
 
 <body>
-    <header id="myHeader">
-        <div class="header-container">
-            <nav class="header-block">
-                <div class="logo">
-                    <img src="../../img/header/logo.svg" alt="Wedding Site Logo" loading="lazy">
-                </div>
-                <ul class="nav-links" role="navigation">
-                    <li><a href="/home">HOME</a></li>
-                    <li><a href="/pages">PAGES</a></li>
-                    <li><a href="/portfolio">PORTFOLIO</a></li>
-                    <li><a href="/shop">SHOP</a></li>
-                    <li><a href="/blog">BLOG</a></li>
-                    <li><a href="/contact">CONTACT</a></li>
-                </ul>
-                <div class="header-icons">
-                    <button class="icon-button" aria-label="Search">
-                        <img src="../../img/header/search.png" alt="Search Icon" loading="lazy">
-                    </button>
-                    <button class="icon-button" aria-label="Cart">
-                        <img src="../../img/header/basket.png" alt="Cart Icon" loading="lazy">
-                    </button>
-                </div>
-            </nav>
-        </div>
-    </header>
+
 
     <div class="big-container">
+        <header id="myHeader">
+            <div class="header-container">
+                <nav class="header-block">
+                    <div class="logo">
+                        <img src="../../img/header/logo.svg" alt="Wedding Site Logo" loading="lazy">
+                    </div>
+                    <ul class="nav-links" role="navigation">
+                        <li><a href="/home">HOME</a></li>
+                        <li><a href="/pages">PAGES</a></li>
+                        <li><a href="/portfolio">PORTFOLIO</a></li>
+                        <li><a href="/shop">SHOP</a></li>
+                        <li><a href="/blog">BLOG</a></li>
+                        <li><a href="/contact">CONTACT</a></li>
+                    </ul>
+                    <div class="header-icons">
+                        <button class="icon-button" aria-label="Search">
+                            <img src="../../img/header/search.png" alt="Search Icon" loading="lazy">
+                        </button>
+                        <button class="icon-button" aria-label="Cart">
+                            <img src="../../img/header/basket.png" alt="Cart Icon" loading="lazy">
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <main class="main-section">
             <div class="main-block-box">
                 <div class="main-title" style="animation-duration: 2s;">
@@ -50,14 +53,15 @@
                     </p>
                     <p class="main-title-smalltext">12 . 12 . 2024</p>
                 </div>
+
                 <div class="main-block-image-section">
                     <div class="main-block-image-box">
-                        <!-- <div class="main-image-item1">
-                            <img src="./img/back-flower.png" alt="" height="700px">
-                        </div> -->
+                        <div class="main-image-item1">
+                            <img src="./img/back-flower.png" alt="">
+                        </div>
 
                         <div class="main-image-item2">
-                            <img src="./img/main-img.png" alt="" height="448px" width="448px">
+                            <img src="./img/main-img.png" alt="">
                         </div>
 
                     </div>
@@ -65,11 +69,11 @@
             </div>
         </main>
 
-        <div class="main-galery-big-cont">
-            <div class="main-galery-box">
-                <div class="main-galery-item-one" style="animation-duration: 3s;">
+        <div class="main-galery">
+            <div class="main-galery__content__box">
+                <div class="main-galery__item-one">
                     <div class="main-galery-item1-child1">
-                        <!-- <img class="main-galery-item1-child1-dec" src="./img/main-galery-one-decoration.png" alt=""> -->
+                        <img class="main-galery-item1-child1-dec" src="./img/main-galery-one-decoration.png" alt="">
                         <div class="main-galery-item1-child1-img">
                             <img src="./img/main-galery-1img.jpg" alt="">
                         </div>
@@ -80,7 +84,8 @@
                     </div>
 
                     <div class="main-galery-item1-two ">
-                        <!-- <img class="main-galery-item1-two-decoraion-img" src="./img/main-galery-two-decoration.png" alt=""> -->
+                        <img class="main-galery-item1-two-decoraion-img" src="./img/main-galery-two-decoration.png"
+                            alt="">
                         <div class="main-galery-item2-child2-img">
                             <img src="./img/main-galery-2img.jpg" alt="">
                         </div>
@@ -90,8 +95,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="main2">
-                    <div class="main-galery-item-two ">
+                <div class="main-galery__content__two">
+                    <div class="main-galery__content__two__items">
                         <div class="main-galery-two-item1">
                             <div class="main-galery-item-two-first-wrapper">
                                 <div class="main-galery-two-itm1-first-person">
@@ -99,16 +104,13 @@
                                 </div>
                                 <div class="main-gl-item2-first-person-suptitle">
                                     <p class="main-item2-first-parag">Esabella Bell</p>
-                                    <p class="main-item2-second-parag">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit.
-                                        Soluta quasi rerum neque
-                                        voluptate similique exercitationem</p>
+                                    <p class="main-item2-second-parag">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Urna orci auctor vitae nisl. fringilla pellesque amet tempus.
+                                    </p>
                                 </div>
+
                                 <div class="main-item2-links">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <i class="fa-brands fa-facebook-f"></i>
                                 </div>
                             </div>
 
@@ -148,8 +150,8 @@
                     <div class="main-galery-item-three-box">
                         <div class="main-gl-item-three-child1-wrapper">
                             <div class="main-galery-item3-child1">
-                                <!-- <img class="main-galery-item3-child1-decoration" src="./img/main-galery-decoration3.png"
-                                alt=""> -->
+                                <img class="main-galery-item3-child1-decoration" src="./img/main-galery-decoration3.png"
+                                    alt="">
                                 <div class="main-galery-item3-child1-img">
                                     <img src="./img/main-galery-3img.jpg" alt="">
                                 </div>
@@ -161,8 +163,8 @@
                         </div>
                         <div class="main-gl-item-three-child2-wrapper">
                             <div class="main-galery-item3-child2">
-                                <!-- <img class="main-galery-item3-child2-decoration" src="./img/main-galery-decoration4.png"
-                                alt=""> -->
+                                <img class="main-galery-item3-child2-decoration" src="./img/main-galery-decoration4.png"
+                                    alt="">
                                 <div class="main-galery-item3-child2-img">
                                     <img src="./img/main-galery-4img.jpg" alt="">
                                 </div>
@@ -178,50 +180,30 @@
         </div>
 
         <!-- swiper block -->
-        <div class="swiper-galery-cont">
-            <div class="swiper-galery-box">
-
+        <div class="swiper-galery">
+            <div class="swiper-galery__content__box">
+                <!-- <button onclick="open()">a</button> -->
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="swiper-galery-img">
-                                <img src="./img/swiper-img1.jpg" alt="">
-                            </div>
+
+                            <img src="./img/swiper-img1.jpg" alt="">
+
                         </div>
                         <div class="swiper-slide">
-                            <div class="swiper-galery-img">
-                                <img src="./img/swiper-img2.jpg" alt="">
-                            </div>
+
+                            <img src="./img/swiper-img2.jpg" alt="">
+
                         </div>
                         <div class="swiper-slide">
-                            <div class="swiper-galery-img">
-                                <img src="./img/swiper-img3.jpg" alt="">
-                            </div>
+
+                            <img src="./img/swiper-img3.jpg" alt="">
+
                         </div>
                         <div class="swiper-slide">
-                            <div class="swiper-galery-img">
-                                <img src="./img/swiper-img4.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-galery-img">
-                                <img src="./img/swiper-img1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-galery-img">
-                                <img src="./img/swiper-img2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-galery-img">
-                                <img src="./img/swiper-img3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-galery-img">
-                                <img src="./img/swiper-img4.jpg" alt="">
-                            </div>
+
+                            <img src="./img/swiper-img4.jpg" alt="">
+
                         </div>
 
                         <!--  -->
@@ -242,7 +224,7 @@
         </div>
 
         <!-- Top Guest Box -->
-        <div class="top-guest-container">
+        <div class="top-guests">
             <div class="top-guest-title-box">
                 <p class="guest-title-title">Top Guest</p>
                 <p class="guest-title-suptitle">Bridesmaids & Groomsman</p>
@@ -289,9 +271,9 @@
             </div>
         </div>
 
-        <div class="rsvp-form-container">
-            <div class="rsvp-backround-img">
-                <div class="form-container">
+        <div class="attending-form">
+            <div class="attending-form__backround__img">
+                <div class="attending-form__content">
                     <form id="form" action="">
                         <span class="form-title">Are You Attending?</span>
                         <input class="form-inputs" type="text" placeholder="Name">
@@ -303,7 +285,9 @@
                             <label for="">Sorry, I can`t come</label>
                         </div>
                         <select name="guestsnumber" id="guest-numbers">
-                            <option class="form-options" value="numberofguests" disabled>Number Of Guests</option>
+                            <!-- <option value="dis" disabled>number</option> -->
+                            <option class="form-options form-selected" value="numberofguests" disabled selected>Number
+                                Of Guests</option>
                             <option class="form-options" value="01">01</option>
                             <option class="form-options" value="02">02</option>
                             <option class="form-options" value="03">03</option>
@@ -312,7 +296,8 @@
                         </select>
                         <input class="form-inputs" type="text" placeholder="What will You be Attending">
                         <select name="meal" id="mealprefer">
-                            <option class="form-options" value="meal" disabled>Meal Preference</option>
+                            <option class="form-options form-selected" value="meal" disabled selected>Meal Preference
+                            </option>
                             <option class="form-options" value="chicken">Chicken Soup</option>
                             <option class="form-options" value="motton">Motton Kebab</option>
                             <option class="form-options" value="bbq">Chicken BBQ</option>
@@ -330,73 +315,8 @@
 
         </div>
 
-        <div class="programs-container">
-            <div class="programs-box">
-                <div class="programs-title-box animate__fadeInRight">
-                    <span class="programs-title">When & Where</span>
-                    <p class="programs-suptitle">Our Wedding Programs</p>
-                    <hr class="once-hr">
-                    <hr class="twice-hr">
-                </div>
-                <div class="programs-sup-title-box">
-                    <p class="programs-date">Monday, 12 Apr. 2024, 2.00 PM – 11.00 PM</p>
-                    <p class="programs-place">4517 Washington Ave. Manchester, Kentucky 39495</p>
-                </div>
-
-                <div class="programs-items-wrapper">
-                    <div class="programs-items-img-box">
-                        <div class="programs-items">
-                            <div class="programs-items-img">
-                                <i><img src="./img/program-icon/1.svg" alt=""></i>
-                                <span class="program-itm-span">Welcome Drinks</span>
-                            </div>
-                        </div>
-                        <div class="programs-items">
-                            <div class="programs-items-img">
-                                <i><img src="./img/program-icon/2.svg" alt=""></i>
-                                <span class="program-itm-span">Ceremony</span>
-                            </div>
-                        </div>
-                        <div class="programs-items">
-                            <div class="programs-items-img">
-                                <i><img src="./img/program-icon/3.svg" alt=""></i>
-                                <span class="program-itm-span">Party Photos</span>
-                            </div>
-                        </div>
-                        <div class="programs-items">
-                            <div class="programs-items-img">
-                                <i><img src="./img/program-icon/4.svg" alt=""></i>
-                                <span class="program-itm-span">Dinner</span>
-                            </div>
-                        </div>
-                        <div class="programs-items">
-                            <div class="programs-items-img">
-                                <i><img src="./img/program-icon/5.svg" alt=""></i>
-                                <span class="program-itm-span">Cake Cutting</span>
-                            </div>
-                        </div>
-                        <div class="programs-items">
-                            <div class="programs-items-img">
-                                <i><img src="./img/program-icon/6.svg" alt=""></i>
-                                <span class="program-itm-span">First Dance</span>
-                            </div>
-                        </div>
-                        <div class="programs-items">
-                            <div class="programs-items-img">
-                                <i><img src="./img/program-icon/7.svg" alt=""></i>
-                                <span class="program-itm-span">Depart</span>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="news-container">
-            <div class="news-box">
+        <div class="news">
+            <div class="news__content__box">
                 <div class="news-title-box">
                     <span class="news-title">When & Where</span>
                     <p class="news-suptitle">Our Wedding Programs</p>
@@ -459,10 +379,10 @@
 
         </div>
 
-        <div class="sponsor-container">
+        <div class="sponsors">
             <!-- <div class="swiper mySwiper2"> -->
             <marquee scrollamount="20">
-                <div class="sponsor-box">
+                <div class="sponsors__content__box">
 
                     <div class="sponsor-items"><img src="./img/partners/1.png" alt=""></div>
                     <div class="sponsor-items"><img src="./img/partners/2.png" alt=""></div>
@@ -499,7 +419,7 @@
         </div>
 
         <footer class="footer">
-            <div class="footer-box">
+            <div class="footer__content__box">
                 <div class="footer-item1">
                     <p class="footer-item1-title">Links</p>
                     <div class="footer-itm1-child-wrapper">
@@ -537,15 +457,18 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-second-cont">
+            <div class="footer-second-content">
                 <p>© Copyright 2024 | Sukun | All right reserved.</p>
             </div>
         </footer>
     </div>
 </body>
+<!-- <script src="./all.js"></script> -->
+<script src="./all.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./modal.js"></script>
 <script src="./swiper.js"></script>
 <script src="./scroll.js"></script>
-<script src="./all.js"></script>
 
 </html>

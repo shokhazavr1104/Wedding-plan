@@ -55,7 +55,7 @@ const header = document.getElementById('myHeader')
 
 
 const observer = new IntersectionObserver((entries, observer) => {
-    console.log({ entries })
+    // console.log({ entries })
 
     entries.map((entry) => {
         if (entry.isIntersecting) {
@@ -68,19 +68,16 @@ const observer = new IntersectionObserver((entries, observer) => {
     threshold: [0.9]
 });
 
-
-
-
 observer.observe(document.querySelector('.mySwiper'))
 
 const mainTitle = document.querySelector('.main-title');
 const mainImg = document.querySelector('.main-image-item1');
-const mainsectionOnce = document.querySelector('.main-galery-item-one');
+const mainsectionOnce = document.querySelector('.main-galery__item-one');
 const mainsectionTwice = document.querySelector('.main-galery-item-three');
-const sectionSwiper = document.querySelector('.swiper-galery-cont');
+const sectionSwiper = document.querySelector('.swiper-galery');
 const guesttitlesection = document.querySelector('.top-guest-title-box');
 const guestgalerysec = document.querySelector('.top-guest-galery-box');
-const formcont = document.querySelector('.form-container');
+const formcont = document.querySelector('.attending-form__content');
 const newstitle = document.querySelector('.news-title-box');
 const newsbox = document.querySelector('.news-galery-box');
 
