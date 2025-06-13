@@ -8,39 +8,128 @@
     <link rel="stylesheet" href="../../assets/css/temps/secondPage.css">
     <link rel="stylesheet" href="../../assets/css/temps/normalise.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 
 <body>
     <header id="myHeader">
         <div class="header-container">
+            <div class="logo">
+                <img src="../../img/header/logo.svg" alt="Wedding Site Logo" loading="lazy">
+            </div>
             <nav class="header-block">
-                <div class="logo">
-                    <img src="../../img/header/logo.svg" alt="Wedding Site Logo" loading="lazy">
-                </div>
-                <ul class="nav-links" role="navigation">
-                    <li><a href="/home">HOME</a></li>
-                    <li><a href="/pages">PAGES</a></li>
-                    <li><a href="/portfolio">PORTFOLIO</a></li>
-                    <li><a href="/shop">SHOP</a></li>
-                    <li><a href="/blog">BLOG</a></li>
-                    <li><a href="/contact">CONTACT</a></li>
-                </ul>
-                <div class="header-icons">
-                    <button class="icon-button" aria-label="Search">
-                        <img src="../../img/header/search.png" alt="Search Icon" loading="lazy">
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        HOME
                     </button>
-                    <button class="icon-button" aria-label="Cart">
-                        <img src="../../img/header/basket.png" alt="Cart Icon" loading="lazy">
-                    </button>
+                    <ul class="dropdown-menu" role="navigation">
+                        <li><a class="dropdown-item" href="#">HOME</a></li>
+                        <li><a class="dropdown-item" href="#">PAGES</a></li>
+                        <li><a class="dropdown-item" href="#">PORTFOLIO</a></li>
+                        <li><a class="dropdown-item" href="#">SHOP</a></li>
+                        <li><a class="dropdown-item" href="#">BLOG</a></li>
+                        <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                    </ul>
                 </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        PAGES
+                    </button>
+                    <ul class="dropdown-menu" role="navigation">
+                        <li><a class="dropdown-item" href="#">HOME</a></li>
+                        <li><a class="dropdown-item" href="#">PAGES</a></li>
+                        <li><a class="dropdown-item" href="#">PORTFOLIO</a></li>
+                        <li><a class="dropdown-item" href="#">SHOP</a></li>
+                        <li><a class="dropdown-item" href="#">BLOG</a></li>
+                        <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        PORTFOLIO
+                    </button>
+                    <ul class="dropdown-menu" role="navigation">
+                        <li><a class="dropdown-item" href="#">HOME</a></li>
+                        <li><a class="dropdown-item" href="#">PAGES</a></li>
+                        <li><a class="dropdown-item" href="#">PORTFOLIO</a></li>
+                        <li><a class="dropdown-item" href="#">SHOP</a></li>
+                        <li><a class="dropdown-item" href="#">BLOG</a></li>
+                        <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        SHOP
+                    </button>
+                    <ul class="dropdown-menu" role="navigation">
+                        <li><a class="dropdown-item" href="#">HOME</a></li>
+                        <li><a class="dropdown-item" href="#">PAGES</a></li>
+                        <li><a class="dropdown-item" href="#">PORTFOLIO</a></li>
+                        <li><a class="dropdown-item" href="#">SHOP</a></li>
+                        <li><a class="dropdown-item" href="#">BLOG</a></li>
+                        <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        BLOG
+                    </button>
+                    <ul class="dropdown-menu" role="navigation">
+                        <li><a class="dropdown-item" href="#">HOME</a></li>
+                        <li><a class="dropdown-item" href="#">PAGES</a></li>
+                        <li><a class="dropdown-item" href="#">PORTFOLIO</a></li>
+                        <li><a class="dropdown-item" href="#">SHOP</a></li>
+                        <li><a class="dropdown-item" href="#">BLOG</a></li>
+                        <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        CONTACT
+                    </button>
+                    <ul class="dropdown-menu" role="navigation">
+                        <li><a class="dropdown-item" href="#">HOME</a></li>
+                        <li><a class="dropdown-item" href="#">PAGES</a></li>
+                        <li><a class="dropdown-item" href="#">PORTFOLIO</a></li>
+                        <li><a class="dropdown-item" href="#">SHOP</a></li>
+                        <li><a class="dropdown-item" href="#">BLOG</a></li>
+                        <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+
             </nav>
+            <div class="header-icons">
+                <button class="icon-button" aria-label="Search">
+                    <img src="../../img/header/search.png" alt="Search Icon" loading="lazy">
+                </button>
+                <button class="icon-button" aria-label="Cart">
+                    <img src="../../img/header/basket.png" alt="Cart Icon" loading="lazy">
+                </button>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="first-section">
-            <div class="first-section-container">
+
+
+
+    <main id="main">
+        <div class="main-container">
+
+            <section class="swp-section">
+
                 <div class="fr-sec-tex-block">
                     <div class="fr-sec-uzor">
                         <img src="../../img/secondPage/frSecSwp/heading-shape-1.png" alt="Decorative element"
@@ -56,312 +145,118 @@
                     </div>
                 </div>
 
-                <div class="fr-sec-swp-block">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="../../img/secondPage/frSecSwp/slide-1.jpg" alt="Wedding photo 1"
-                                    loading="lazy">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../../img/secondPage/frSecSwp/slide-1.jpg" alt="Wedding photo 1" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../img/secondPage/frSecSwp/slide-2.jpg" alt="Wedding photo 2" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../img/secondPage/frSecSwp/slide-3.jpg" alt="Wedding photo 3" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="section__timer">
+                    <div class="timer">
+                        <div class="timer-container">
+                            <div class="timer-contant">
+                                <div class="timer-value" id="days">215</div>
+                                <div class="timer-label">Days</div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="../../img/secondPage/frSecSwp/slide-2.jpg" alt="Wedding photo 2"
-                                    loading="lazy">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="../../img/secondPage/frSecSwp/slide-3.jpg" alt="Wedding photo 3"
-                                    loading="lazy">
+                        </div>
+                        <div class="timer-container">
+                            <div class="timer-contant">
+                                <div class="timer-value" id="hours">02</div>
+                                <div class="timer-label">Hours</div>
                             </div>
                         </div>
+                        <div class="timer-container">
+                            <div class="timer-contant">
+                                <div class="timer-value" id="minutes">01</div>
+                                <div class="timer-label">Mins</div>
+                            </div>
+                        </div>
+                        <div class="timer-container">
+                            <div class="timer-contant">
+                                <div class="timer-value" id="seconds">35</div>
+                                <div class="timer-label">Secs</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="timer">
-                    <div class="timer-container">
-                        <div class="timer-contant">
-                            <div class="timer-value" id="days">215</div>
-                            <div class="timer-label">Days</div>
-                        </div>
-                    </div>
-                    <div class="timer-container">
-                        <div class="timer-contant">
-                            <div class="timer-value" id="hours">02</div>
-                            <div class="timer-label">Hours</div>
-                        </div>
-                    </div>
-                    <div class="timer-container">
-                        <div class="timer-contant">
-                            <div class="timer-value" id="minutes">01</div>
-                            <div class="timer-label">Mins</div>
-                        </div>
-                    </div>
-                    <div class="timer-container">
-                        <div class="timer-contant">
-                            <div class="timer-value" id="seconds">35</div>
-                            <div class="timer-label">Secs</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-
-        <section class="second-section">
-            <div class="second-section-container">
-                <div class="second-section-block">
-                    <div class="sec-left-text sec-text-block">
-                        <div class="sec-nevesta sec-icons">
-                            <img src="../../img/secondPage/scSec/bride2.svg" alt="">
-                        </div>
-                        <h2 class="sec-left-h2 sec-title">Esabella Bell</h2>
-                        <p class="sec-left-p sec-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro vel
-                            quisquam alias ipsa repellendus quo doloremque nulla repellat voluptates, tempore
-                            adipisci ea doloribus temporibus voluptatem, molestiae obcaecati? Praesentium,
-                            cupiditate accusantium.
-                        </p>
-                    </div>
-                    <div class="sec-right-text sec-text-block">
-                        <div class="sec-jenix sec-icons">
-                            <img src="../../img/secondPage/scSec/groom2.svg" alt="">
-                        </div>
-                        <h2 class="sec-right-h2 sec-title">William Max</h2>
-                        <p class="sec-right-p sec-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro vel
-                            quisquam alias ipsa repellendus quo doloremque nulla repellat voluptates, tempore
-                            adipisci ea doloribus temporibus voluptatem, molestiae obcaecati? Praesentium,
-                            cupiditate accusantium.
-                        </p>
-                    </div>
-                    <div class="sec-para-img">
-                        <div class="sec-para-img-inner">
-                            <img src="../../img/secondPage/scSec/couple-img-11.jpg" style="border-radius: 350px;"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="section-story">
-            <div class="story-container">
-                <div class="story-title">
-                    <h2 class="story-h2 title-h2">Our story</h2>
-                    <p class="story-p text-p">Our sweet love story</p>
-                    <div class="story-hr-block title-hr">
-                        <hr class="hr1" style="width: 500px; border: 1px solid orange;">
-                        <hr class="hr2" style="width: 300px; border: 1px solid orange;">
-                    </div>
-                </div>
-
-                <div class="stoty-casrds-block">
-                    <div id="story-cards" class="story-card-one story-cards ">
-                        <div class="story-card-img st-card-img-one story-left-block">
-                            <div class="imgBorder"></div>
-                            <img src="../../img/secondPage/scThitd/story-10.jpg" alt="">
-                        </div>
-
-                        <div class="story-card-text st-card-text-one story-right-block">
-                            <h2 class="st-card-title">First time we meet</h2>
-                            <data class="st-card-data" value="12.02.2016">12 Feb 2016</data>
-                            <p class="st-card-p">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis aperiam
-                                corporis repellendus laborum voluptatem. Magni, magnam fugit nulla consectetur
-                                consequuntur officiis, aliquam tempora, eveniet ratione odit nostrum nobis aperiam.
+            <!-- section social -->
+            <section class="social__parent">
+                <div class="social-container">
+                    <div class="social-block">
+                        <div class="social-left-text">
+                            <div class="social-girl-icon">
+                                <img src="../../img/secondPage/scSec/bride2.svg" alt="">
+                            </div>
+                            <h2 class="social-girl-name">Esabella Bell</h2>
+                            <p class="socail-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci
+                                auctor vitae nisl. fringilla pellesque amet tempus.
                             </p>
-                        </div>
-                    </div>
-
-                    <div id="story-cards" class="story-card-two story-cards ">
-                        <div class="story-card-text st-card-text-two story-left-block">
-                            <h2 class="st-card-title">First time we meet</h2>
-                            <data class="st-card-data" value="12.02.2016">12 Feb 2016</data>
-                            <p class="st-card-p">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis aperiam
-                                corporis repellendus laborum voluptatem. Magni, magnam fugit nulla consectetur
-                                consequuntur officiis, aliquam tempora, eveniet ratione odit nostrum nobis aperiam.
-                            </p>
-                        </div>
-
-                        <div class="story-card-img st-card-img-two story-right-block">
-                            <div class="imgBorder"></div>
-                            <img src="../../img/secondPage/scThitd/34.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <div id="story-cards" class="story-card-three story-cards ">
-                        <div class="story-card-img st-card-img-three story-left-block">
-                            <div class="imgBorder"></div>
-                            <img src="../../img/secondPage/scThitd/img-5.jpg" alt="">
-                        </div>
-
-                        <div class="story-card-text st-card-text-three story-right-block">
-                            <h2 class="st-card-title">First time we meet</h2>
-                            <data class="st-card-data" value="12.02.2016">12 Feb 2016</data>
-                            <p class="st-card-p">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis aperiam
-                                corporis repellendus laborum voluptatem. Magni, magnam fugit nulla consectetur
-                                consequuntur officiis, aliquam tempora, eveniet ratione odit nostrum nobis aperiam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-block">
-                    <button id="forVideoModal">
-                        <i class="fa-solid fa-play fa-sm"
-                            style="color: white; width: 60px; height: 60px; text-align: center;"></i>
-                    </button>
-                    <div id="videoModal" class="videoModal">
-
-                        <!-- Modal content -->
-                        <div class="video-modal-content">
-                            <span class="VideoModalClose" style="width: 100%;text-align: end;">&times;</span>
-                            <iframe width="650px" height="350px"
-                                src="https://www.youtube.com/embed/OUB6zKc-Tos?si=GYhq6xuRwt7Cdaj7"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <!-- GRID MODAL STARTS -->
-
-
-
-        <section class="section-modal-grid">
-            <div class="modal-grid-container"></div>
-        </section>
-
-
-
-        <!-- GRID MODAL ENDS -->
-
-
-
-
-
-
-
-        <!-- SDKVKLSJDVSKJDV -->
-
-        <section class="rsvp-form-container">
-            <div class="rsvp-backround-img">
-                <div class="form-container">
-                    <div id="form-box" action="">
-                        <form id="form" action="#">
-                            <fieldset id="form-fieldset">
-                                <h2 class="form-title">Are You Attending?</h2>
-                                <div class="">
-                                    <input type="text" placeholder="Name">
-                                </div>
-
-                                <div class="">
-                                    <input type="email" placeholder="Email">
-                                </div>
-
-                                <div class="radioBlock">
-
-                                    <label for="Yes">
-                                        <input type="radio" id="Yes" name="coming">
-                                        Yes, I will be there
-                                    </label>
-
-
-                                    <label for="No">
-                                        <input type="radio" id="No" name="coming">
-                                        Sorry, I can’t come
-                                    </label>
-                                </div>
-
-                                <select name="" id="">
-                                    Number of guests
-                                    <option value="01">01</option>
-                                    <option value="02">02</option>
-                                    <option value="03">03</option>
-                                    <option value="04">04</option>
-                                    <option value="05">05</option>
-                                </select>
-
-                                <div class="">
-                                    <input type="text" id="" placeholder="What will you be Attending?">
-                                </div>
-
-                                <select name="" id="">
-                                    <option value="" selected disabled>Meal preferences</option>
-                                    <option value="">Chiken soup</option>
-                                    <option value="">Motton kabab</option>
-                                    <option value="">Chiken BBQ</option>
-                                    <option value="">Mix salad</option>
-                                    <option value="">Beef Ribs</option>
-                                </select>
-
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <!-- <div class="rsvp-backround-img">
-                <div class="form-container">
-                    <div id="form-box" action="">
-                        <form action="" id="form">
-                            <span class="form-title">Are You Attending?</span>
-                            <input class="form-inputs" type="text" placeholder="Name">
-                            <input class="form-inputs" type="email" placeholder="Email">
-                            <div class="rsvp-form-radio-box">
-                                <input type="radio">
-                                <label for="">Yes, I will be there</label>
-                                <input class="rsvp-radio-input2" type="radio">
-                                <label for="">Sorry, I can`t come</label>
+                            <div class="social-left-icons">
+                                <img src="../../img/secondPage/scSec/icons-facebook.png" alt="">
+                                <img src="../../img/secondPage/scSec/icons-twitter.png" alt="">
+                                <img src="../../img/secondPage/scSec/icons-instagram.png" alt="">
                             </div>
-                            <select class="select-amount" name="guestsnumber" id="guest-numbers">
-                                <option class="form-options" value="numberofguests" selected disabled>Number Of Guests</option>
-                                <option class="form-options" value="01">01</option>
-                                <option class="form-options" value="02">02</option>
-                                <option class="form-options" value="03">03</option>
-                                <option class="form-options" value="04">04</option>
-                                <option class="form-options" value="05">05</option>
-                            </select>
-                            <input class="form-inputs" type="text" placeholder="What will You be Attending">
-                            <select class="select-meal-type" name="meal" id="mealprefer">
-                                <option class="form-options" value="meal" disabled>Meal Preference</option>
-                                <option class="form-options" value="chicken">Chicken Soup</option>
-                                <option class="form-options" value="motton">Motton Kebab</option>
-                                <option class="form-options" value="bbq">Chicken BBQ</option>
-                                <option class="form-options" value="salad">Mix Salad</option>
-                                <option class="form-options" value="beef">Beef Ribs</option>
-                            </select>
-                            <div class="form-button-box">
+                        </div>
+                        <div class="social-img-border">
+                            <div class="social-cuple-img">
+                                <img src="../../img/secondPage/scSec/couple-img-11.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="social-right-text">
+                            <div class="social-guy-icon">
+                                <img src="../../img/secondPage/scSec/groom2.svg" alt="">
+                            </div>
+                            <h2 class="social-guy-name">William Max</h2>
+                            <p class="socail-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci
+                                auctor vitae nisl. fringilla pellesque amet tempus.
+                            </p>
+                            <div class="social-right-icons">
+                                <img src="../../img/secondPage/scSec/icons-facebook.png" alt="">
+                                <img src="../../img/secondPage/scSec/icons-twitter.png" alt="">
+                                <img src="../../img/secondPage/scSec/icons-instagram.png" alt="">
+                            </div>
+                        </div>
 
-                                <button class="form-submit" type="submit">RSVP</button>
-                        </form>
                     </div>
                 </div>
-            </div> -->
+
+            </section>
+            <!-- section social -->
 
 
+            <!-- section story -->
 
+            <section class="section__story">
+                <div class="container__story"></div>
+            </section>
 
-        </section>
-
-        <!-- SDBVLSDVLKSDVBK -->
-
-
+            <!-- section story -->
+        </div>
     </main>
 
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+
+
+
+    <footer id="footer"></footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../secondPage/secondPage.js" type="module"></script>
     <script src="../../temps/secondPage/all.js"></script>
 </body>
