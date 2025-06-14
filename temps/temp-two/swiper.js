@@ -1,27 +1,22 @@
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 5,
-//     spaceBetween: 30,
-//     loop: true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 6,
-    spaceBetween: 30,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    slidesPerView: 3,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
     loop: true,
     pagination: {
         el: ".swiper-pagination",
-        clickable: true,
-    },
-    on: {
-        slideChange: function (swiper) {
-            var card = document.querySelectorAll('.swiper-slide');
-            card.forEach(item => {
-                item.classList.toggle('swiper-slide-active');
-            });
-            // console.log(card)
-        }
     },
 });
