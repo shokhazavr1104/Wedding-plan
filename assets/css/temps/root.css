@@ -1,15 +1,13 @@
-:root{
-    /* BG Colors */
-    --first-sec-right-bg: #dcbfd4;
-    /* BG Colors */
-    
-    /* Colors */
-    --color-one: #323232;
-    --color-two: #707070;
-    /* Colors */
-
-    /* Font Family */
-    --font-family-monallesia: Monallesia;
-    --font-family-mulish: Mulish-ExtraLight;
-    /* Font Family */
+:root {
+  /* BG Colors */
+  --first-sec-right-bg: #dcbfd4;
+  /* BG Colors */
+  /* Colors */
+  --color-one: #323232;
+  --color-two: #707070;
+  /* Colors */
+  /* Font Family */
+  --font-family-monallesia: Monallesia;
+  --font-family-mulish: Mulish-ExtraLight;
+  /* Font Family */
 }

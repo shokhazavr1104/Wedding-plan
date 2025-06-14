@@ -82,6 +82,11 @@ const newstitle = document.querySelector('.news-title-box');
 const newsbox = document.querySelector('.news-galery-box');
 
 
+
+
+
+
+
 const observeAnimation = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {

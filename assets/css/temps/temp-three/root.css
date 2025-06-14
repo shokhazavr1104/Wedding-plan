@@ -1,0 +1,23 @@
+:root {
+  --mulishfont: "mulish";
+  --monalisafont: "monalisa";
+  --mulishblock: "mulishblack";
+  --darkwhite: #f8f8f8;
+  --darkgray: #333;
+}
+
+.once-hr {
+  width: 30%;
+  height: 1px;
+  background: #f3e1db;
+}
+
+.twice-hr {
+  margin-top: 5px;
+  width: 20%;
+  height: 1px;
+  background: #f3e1db;
+}
+li {
+  list-style-type: none;
+}
