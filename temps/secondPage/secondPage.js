@@ -7,26 +7,7 @@ const callback = (event) => {
 
 
 
-// const header = document.getElementById('myHeader')
-
-
-
-// const observer = new IntersectionObserver((entries, observer) => {
-//     console.log({ entries })
-
-//     entries.map((entry) => {
-//         if (entry.isIntersecting) {
-//             header.classList.add("scrolled")
-//         } else
-//             header.classList.remove("scrolled")
-//     })
-// }, {
-//     root: null,
-//     threshold: [0.9]
-// });
-
-// observer.observe(document.querySelector('.mySwiper'))
-
+// HEADER SECTION
 const header = document.getElementById('myHeader');
 let lastScrollY = window.scrollY;
 
@@ -56,18 +37,24 @@ window.addEventListener('scroll', handleScroll);
 
 
 
-// window.addEventListener('scroll', () => {
-//     const header = document.getElementById('myHeader');
+const dropdown = document.querySelector('.dropdown');
+const dropdownBtn = document.querySelector('.dropdown-btn');
 
-//     IntersectionObserver
+dropdownBtn.addEventListener('click', function () {
+    dropdown.classList.toggle('active');
+});
 
-//     if (window.scrollY > 50) {
-//         header.classList.add('scrolled');
-//     } else {
-//         header.classList.remove('scrolled');
-//     }
-// });
+// Закрытие при клике вне меню
+document.addEventListener('click', function (e) {
+    if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('active');
+    }
+});
 
+
+
+
+// SWIPER SECTION
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     effect: "fade",
@@ -91,10 +78,7 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-
-
 // FIRST SECTION TIMER
-
 
 const countDownDate = new Date();
 countDownDate.setDate(countDownDate.getDate() + 215);
@@ -135,149 +119,103 @@ const x = setInterval(function () {
 
 
 
-const section = document.querySelector('.section-story');
+// Modal Flex
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
 
-const titleH2 = document.querySelector(".story-h2 ");
-const titleP = document.querySelector(".story-p");
-const titleHr = document.querySelector(".story-hr-block ");
-
-const titleObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            titleH2.classList.add("animate__fadeInRight");
-            titleP.classList.add("animate__fadeInRight");
-            titleHr.classList.add("animate__fadeInRight");
-            observer.unobserve(entry.target);
-        }
-    });
-});
-
-titleObserver.observe(section);
-
-const firstStory = document.querySelector(".story-card-one");
-const fStoryRight = document.querySelector(".st-card-text-one")
-const fStoryLeft = document.querySelector(".st-card-img-one")
-
-
-const firstStoryObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            fStoryRight.classList.add("animate__fadeInRight");
-            fStoryLeft.classList.add("animate__fadeInLeft");
-            observer.unobserve(entry.target);
-        }
-    });
-});
-
-firstStoryObserver.observe(firstStory);
-
-firstStory.addEventListener("mouseenter", (e) => {
-    fStoryLeft.classList.add("forScale");
-});
-
-
-firstStory.addEventListener("mouseleave", (e) => {
-    fStoryLeft.classList.remove("forScale");
-});
-
-
-const secondStory = document.querySelector(".story-card-two");
-const sStoryRight = document.querySelector(".st-card-img-two")
-const sStoryLeft = document.querySelector(".st-card-text-two")
-
-
-
-const secondStoryObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            sStoryRight.classList.add("animate__fadeInRight");
-            sStoryLeft.classList.add("animate__fadeInLeft");
-            observer.unobserve(entry.target);
-        }
-    });
-});
-
-secondStoryObserver.observe(secondStory);
-
-secondStory.addEventListener("mouseenter", (e) => {
-
-    sStoryRight.classList.add("forScale");
-});
-
-
-secondStory.addEventListener("mouseleave", (e) => {
-
-    sStoryRight.classList.remove("forScale");
-});
-
-
-const thirdStory = document.querySelector(".story-card-three");
-const thStoryRight = document.querySelector(".st-card-text-three")
-
-const thStoryLeft = document.querySelector(".st-card-img-three")
-
-
-
-const thridStoryObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            thStoryRight.classList.add("animate__fadeInRight");
-            thStoryLeft.classList.add("animate__fadeInLeft");
-            observer.unobserve(entry.target);
-        }
-    });
-});
-
-thridStoryObserver.observe(thirdStory);
-
-
-thirdStory.addEventListener("mouseenter", (e) => {
-
-    thStoryLeft.classList.add("forScale");
-});
-
-
-thirdStory.addEventListener("mouseleave", (e) => {
-
-    thStoryLeft.classList.remove("forScale");
-});
-
-
-
-
-// Video modal
-
-
-const VideoModal = document.getElementById("videoModal");
-
-
-const btn = document.getElementById("forVideoModal");
-
-
-const span = document.querySelector(".VideoModalClose");
-
-
-btn.onclick = function () {
-    VideoModal.style.display = "block";
+function openModal(element) {
+    const img = element.querySelector("img");
+    modalImg.src = img.src;
+    modal.style.display = "flex";
+    setTimeout(() => modal.classList.add("active"), 10);
+    document.addEventListener("keydown", handleKeyPress);
 }
 
-
-span.onclick = function () {
-    VideoModal.style.display = "none";
+function closeModal() {
+    modal.classList.remove("active");
+    setTimeout(() => {
+        modal.style.display = "none";
+    }, 300);
+    document.removeEventListener("keydown", handleKeyPress);
 }
 
+function handleKeyPress(e) {
+    if (e.key === "Escape") closeModal();
+}
 
-window.onclick = function (event) {
-    if (event.target == VideoModal) {
-        VideoModal.style.display = "none";
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+});
+
+window.openModal = openModal;
+window.closeModal = closeModal;
+
+
+
+
+
+// BURGER MENU
+
+const navBarIcon = document.querySelector('.navBar_icon');
+const navBar = document.querySelector('.nav__bar');
+
+navBarIcon.addEventListener('click', () => {
+    navBar.classList.toggle('active');
+});
+
+
+const closeBtn = document.querySelector('.close__navBar');
+
+closeBtn.addEventListener('click', () => {
+    navBar.classList.remove('active');
+});
+
+
+
+// DropDown JS
+
+const dropDown = document.querySelector('.drop__container');
+const dropTitle = document.querySelector('.drop__title');
+
+(function () {
+    let userDivice =
+        navigator.userAgentData?.mobile ||
+        /Android|iPhone/i.test(navigator.userAgent);
+
+    let dropTitleTextContent = dropDown.children[0].textContent.trim();
+    let dropTitleHeight = dropDown.children[0].clientHeight + 'px';
+    let dropOffsetHeigh = dropDown.offsetHeight + 'px';
+    dropDown.style.setProperty('height', dropTitleHeight);
+    dropDown.addEventListener('click', dropParentClicled);
+
+    dropDown.addEventListener('mouseleave', () => {
+        dropDown.style.setProperty('height', dropTitleHeight);
+    });
+
+    function dropParentClicled() {
+        dropDown.style.height = dropOffsetHeigh;
     }
-}
 
+    if (userDivice) {
+        dropDown.addEventListener('touchend', mobileChildTouched);
+    } else {
+        dropDown.addEventListener('click', desctopChildClick);
+    }
 
+    function desctopChildClick(event) {
+        let childText = event.target.textContent;
+        dropTitle.textContent = childText;
+    }
 
-
-
-
+    function mobileChildTouched(event) {
+        let childText = event.target.textContent.trim();
+        dropTitle.textContent = childText;
+        if (dropTitleTextContent != childText) {
+            dropDown.style.setProperty('height', dropTitleHeight);
+        }
+        console.log('dssdas')
+    }
+})();
 
 
 
